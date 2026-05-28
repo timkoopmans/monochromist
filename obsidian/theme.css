@@ -1,5 +1,5 @@
 /* Monochromist — Obsidian theme
-   Neutral grayscale + single muted slate-blue accent.
+   Neutral grayscale + single deep teal accent.
    Fonts: Atkinson Hyperlegible (text), Inter (UI), JetBrains Mono (code). */
 
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
@@ -47,8 +47,8 @@
   --fg2: #909090;
   --fg1: #c8c8c8;
   --fg0: #eaeaea;
-  --accent: #7b92ac;
-  --accent-dim: #5e7390;
+  --accent: #4fa8ab;
+  --accent-dim: #2e7679;
   --red: #b36a6a;
   --green: #7a9c7a;
   --yellow: #b8a06a;
@@ -77,14 +77,14 @@
   --text-success: var(--green);
   --text-warning: var(--yellow);
   --text-accent: var(--accent);
-  --text-accent-hover: #93a8c2;
-  --text-selection: rgba(123, 146, 172, 0.30);
+  --text-accent-hover: #6fbfc2;
+  --text-selection: rgba(79, 168, 171, 0.28);
   --text-highlight-bg: rgba(184, 160, 106, 0.28);
 
   --interactive-normal: var(--bg2);
   --interactive-hover: var(--bg3);
   --interactive-accent: var(--accent);
-  --interactive-accent-hover: #93a8c2;
+  --interactive-accent-hover: #6fbfc2;
 
   --caret-color: var(--fg0);
   --code-background: var(--bg1);
@@ -115,7 +115,7 @@
   --tag-color: var(--accent);
 
   --link-color: var(--accent);
-  --link-color-hover: #93a8c2;
+  --link-color-hover: #6fbfc2;
   --link-external-color: var(--accent);
   --link-unresolved-color: var(--red);
 
@@ -127,7 +127,7 @@
   --table-row-alt-background: var(--bg1);
 
   --checkbox-color: var(--accent);
-  --checkbox-color-hover: #93a8c2;
+  --checkbox-color-hover: #6fbfc2;
   --checkbox-marker-color: var(--bg0);
   --checkbox-border-color: var(--fg3);
 
@@ -146,8 +146,8 @@
   --fg2: #6f685b;
   --fg1: #3d3830;
   --fg0: #1f1b14;
-  --accent: #4a6582;
-  --accent-dim: #7b92ac;
+  --accent: #0a5c5f;
+  --accent-dim: #2e8487;
   --red: #944747;
   --green: #4f6f4f;
   --yellow: #8a7440;
@@ -176,14 +176,14 @@
   --text-success: var(--green);
   --text-warning: var(--yellow);
   --text-accent: var(--accent);
-  --text-accent-hover: #7b92ac;
-  --text-selection: rgba(74, 101, 130, 0.22);
+  --text-accent-hover: #2e8487;
+  --text-selection: rgba(10, 92, 95, 0.20);
   --text-highlight-bg: rgba(138, 116, 64, 0.24);
 
   --interactive-normal: var(--bg1);
   --interactive-hover: var(--bg2);
   --interactive-accent: var(--accent);
-  --interactive-accent-hover: #7b92ac;
+  --interactive-accent-hover: #2e8487;
 
   --caret-color: var(--fg0);
   --code-background: var(--bg1);
@@ -214,7 +214,7 @@
   --tag-color: var(--accent);
 
   --link-color: var(--accent);
-  --link-color-hover: #7b92ac;
+  --link-color-hover: #2e8487;
   --link-external-color: var(--accent);
   --link-unresolved-color: var(--red);
 
@@ -226,7 +226,7 @@
   --table-row-alt-background: var(--bg1);
 
   --checkbox-color: var(--accent);
-  --checkbox-color-hover: #7b92ac;
+  --checkbox-color-hover: #2e8487;
   --checkbox-marker-color: var(--bg0);
   --checkbox-border-color: var(--fg3);
 

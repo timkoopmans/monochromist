@@ -59,9 +59,9 @@ def build(palette, out):
 dark = {
     "ansi": [
         "#343434", "#B36A6A", "#7A9C7A", "#B8A06A",
-        "#7B92AC", "#909090", "#C8C8C8", "#EAEAEA",
+        "#4FA8AB", "#909090", "#C8C8C8", "#EAEAEA",
         "#555555", "#C88080", "#94B894", "#D4BC80",
-        "#9CABBF", "#A0A0A0", "#DCDCDC", "#FFFFFF",
+        "#6FBFC2", "#A0A0A0", "#DCDCDC", "#FFFFFF",
     ],
     "bg": "#343434",
     "fg": "#EAEAEA",
@@ -70,16 +70,16 @@ dark = {
     "cursor_text": "#343434",
     "selection": "#555555",
     "selected_text": "#EAEAEA",
-    "link": "#7B92AC",
-    "accent": "#7B92AC",
+    "link": "#4FA8AB",
+    "accent": "#4FA8AB",
 }
 
 light = {
     "ansi": [
         "#1F1B14", "#944747", "#4F6F4F", "#8A7440",
-        "#4A6582", "#6F685B", "#3D3830", "#F4F0EC",
+        "#0A5C5F", "#6F685B", "#3D3830", "#F4F0EC",
         "#A29A8C", "#B36A6A", "#6F8F6F", "#A88858",
-        "#7B92AC", "#6F685B", "#5A554C", "#FFFFFF",
+        "#2E8487", "#6F685B", "#5A554C", "#FFFFFF",
     ],
     "bg": "#F4F0EC",
     "fg": "#1F1B14",
@@ -88,8 +88,8 @@ light = {
     "cursor_text": "#F4F0EC",
     "selection": "#CFC8BC",
     "selected_text": "#1F1B14",
-    "link": "#4A6582",
-    "accent": "#4A6582",
+    "link": "#0A5C5F",
+    "accent": "#0A5C5F",
 }
 
 root = Path(__file__).resolve().parent.parent / "iterm2"

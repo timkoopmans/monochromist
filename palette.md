@@ -1,6 +1,6 @@
 # monochromist palette
 
-Neutral grayscale + single muted slate-blue accent. Inspired by [monochrome](https://github.com/anotherglitchinthematrix/monochrome).
+Neutral grayscale + single deep teal accent. Inspired by [monochrome](https://github.com/anotherglitchinthematrix/monochrome).
 
 ## Dark (warm-neutral)
 
@@ -19,8 +19,9 @@ Mid-dark warm-neutral page, not pure black.
 | fg1 (2ary)     | `#C8C8C8` |
 | fg0 (primary)  | `#EAEAEA` |
 | emphasis       | `#FFFFFF` |
-| accent         | `#7B92AC` |
-| accent2        | `#9CABBF` |
+| accent         | `#4FA8AB` |
+| accent2        | `#6FBFC2` |
+| accent-dim     | `#2E7679` |
 | red (error)    | `#B36A6A` |
 | green (ok)     | `#7A9C7A` |
 | yellow (warn)  | `#B8A06A` |
@@ -41,8 +42,9 @@ Off-white warm paper page, not pure white. Foreground warm-tinted.
 | fg1 (2ary)     | `#3D3830` |
 | fg0 (primary)  | `#1F1B14` |
 | emphasis       | `#000000` |
-| accent         | `#4A6582` |
-| accent2        | `#2F4A66` |
+| accent         | `#0A5C5F` |
+| accent2        | `#064043` |
+| accent-dim     | `#2E8487` |
 | red (error)    | `#944747` |
 | green (ok)     | `#4F6F4F` |
 | yellow (warn)  | `#8A7440` |

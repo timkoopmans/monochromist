@@ -1,6 +1,6 @@
 # monochromist
 
-A monochromatic theme for iTerm2, Zed, and Obsidian. Neutral grayscale with a single muted slate-blue accent. Dark + light variants.
+A monochromatic theme for iTerm2, Zed, and Obsidian. Neutral grayscale with a single deep teal accent. Dark + light variants.
 
 Inspired by [anotherglitchinthematrix/monochrome](https://github.com/anotherglitchinthematrix/monochrome).
 
