@@ -36,19 +36,19 @@
   --h6-weight: 600;
 }
 
-/* ===== DARK ===== */
+/* ===== DARK (cool-gray) ===== */
 .theme-dark {
-  --bg0: #0e0e0e;
-  --bg1: #161616;
-  --bg2: #1e1e1e;
-  --bg3: #2a2a2a;
-  --border: #333333;
-  --fg3: #5a5a5a;
-  --fg2: #8a8a8a;
-  --fg1: #b8b8b8;
-  --fg0: #e8e8e8;
-  --accent: #6b8eae;
-  --accent-dim: #44607a;
+  --bg0: #111827;
+  --bg1: #1f2937;
+  --bg2: #374151;
+  --bg3: #4b5563;
+  --border: #374151;
+  --fg3: #4b5563;
+  --fg2: #6b7280;
+  --fg1: #d1d5db;
+  --fg0: #f9fafb;
+  --accent: #7b92ac;
+  --accent-dim: #4b5f7a;
   --red: #b36a6a;
   --green: #7a9c7a;
   --yellow: #b8a06a;
@@ -77,17 +77,17 @@
   --text-success: var(--green);
   --text-warning: var(--yellow);
   --text-accent: var(--accent);
-  --text-accent-hover: #88a8c8;
-  --text-selection: rgba(107, 142, 174, 0.30);
+  --text-accent-hover: #93a8c2;
+  --text-selection: rgba(123, 146, 172, 0.30);
   --text-highlight-bg: rgba(184, 160, 106, 0.28);
 
   --interactive-normal: var(--bg2);
   --interactive-hover: var(--bg3);
   --interactive-accent: var(--accent);
-  --interactive-accent-hover: #88a8c8;
+  --interactive-accent-hover: #93a8c2;
 
   --caret-color: var(--fg0);
-  --code-background: var(--bg2);
+  --code-background: var(--bg1);
   --code-normal: var(--fg0);
   --code-comment: var(--fg2);
   --code-keyword: var(--fg1);
@@ -108,14 +108,14 @@
 
   --divider-color: var(--border);
   --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: rgba(90, 90, 90, 0.35);
-  --scrollbar-active-thumb-bg: rgba(138, 138, 138, 0.7);
+  --scrollbar-thumb-bg: rgba(107, 114, 128, 0.35);
+  --scrollbar-active-thumb-bg: rgba(156, 163, 175, 0.7);
 
   --tag-background: var(--bg2);
   --tag-color: var(--accent);
 
   --link-color: var(--accent);
-  --link-color-hover: #88a8c8;
+  --link-color-hover: #93a8c2;
   --link-external-color: var(--accent);
   --link-unresolved-color: var(--red);
 
@@ -127,7 +127,7 @@
   --table-row-alt-background: var(--bg1);
 
   --checkbox-color: var(--accent);
-  --checkbox-color-hover: #88a8c8;
+  --checkbox-color-hover: #93a8c2;
   --checkbox-marker-color: var(--bg0);
   --checkbox-border-color: var(--fg3);
 
@@ -135,19 +135,19 @@
   --modal-border-color: var(--border);
 }
 
-/* ===== LIGHT ===== */
+/* ===== LIGHT (cool-gray) ===== */
 .theme-light {
-  --bg0: #fafaf8;
-  --bg1: #f2f2f0;
-  --bg2: #e8e8e6;
-  --bg3: #d8d8d6;
-  --border: #c8c8c6;
-  --fg3: #9a9a9a;
-  --fg2: #6a6a6a;
-  --fg1: #3d3d3d;
-  --fg0: #1a1a1a;
+  --bg0: #f9fafb;
+  --bg1: #f3f4f6;
+  --bg2: #e5e7eb;
+  --bg3: #d1d5db;
+  --border: #d1d5db;
+  --fg3: #9ca3af;
+  --fg2: #6b7280;
+  --fg1: #374151;
+  --fg0: #111827;
   --accent: #4a6582;
-  --accent-dim: #6b8eae;
+  --accent-dim: #7b92ac;
   --red: #944747;
   --green: #4f6f4f;
   --yellow: #8a7440;
@@ -176,14 +176,14 @@
   --text-success: var(--green);
   --text-warning: var(--yellow);
   --text-accent: var(--accent);
-  --text-accent-hover: #6b8eae;
+  --text-accent-hover: #7b92ac;
   --text-selection: rgba(74, 101, 130, 0.22);
   --text-highlight-bg: rgba(138, 116, 64, 0.24);
 
   --interactive-normal: var(--bg1);
   --interactive-hover: var(--bg2);
   --interactive-accent: var(--accent);
-  --interactive-accent-hover: #6b8eae;
+  --interactive-accent-hover: #7b92ac;
 
   --caret-color: var(--fg0);
   --code-background: var(--bg1);
@@ -207,14 +207,14 @@
 
   --divider-color: var(--border);
   --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: rgba(154, 154, 154, 0.40);
-  --scrollbar-active-thumb-bg: rgba(106, 106, 106, 0.8);
+  --scrollbar-thumb-bg: rgba(156, 163, 175, 0.40);
+  --scrollbar-active-thumb-bg: rgba(107, 114, 128, 0.8);
 
   --tag-background: var(--bg2);
   --tag-color: var(--accent);
 
   --link-color: var(--accent);
-  --link-color-hover: #6b8eae;
+  --link-color-hover: #7b92ac;
   --link-external-color: var(--accent);
   --link-unresolved-color: var(--red);
 
@@ -226,7 +226,7 @@
   --table-row-alt-background: var(--bg1);
 
   --checkbox-color: var(--accent);
-  --checkbox-color-hover: #6b8eae;
+  --checkbox-color-hover: #7b92ac;
   --checkbox-marker-color: var(--bg0);
   --checkbox-border-color: var(--fg3);
 

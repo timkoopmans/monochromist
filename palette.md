@@ -1,41 +1,41 @@
-# monochromist palette
+# monochromist palette — cool-gray
 
-Neutral grayscale + single muted slate-blue accent. No chromatic noise.
+Cool-tinted neutral grayscale + single muted slate-blue accent. Based on Tailwind gray scale, inspired by [monochrome-{dark,light}-cool-gray](https://github.com/anotherglitchinthematrix/monochrome).
 
-## Dark
+## Dark (cool-gray)
 
-| Role           | Hex       |
-|----------------|-----------|
-| bg0 (deepest)  | `#0E0E0E` |
-| bg1 (panel)    | `#161616` |
-| bg2 (elevated) | `#1E1E1E` |
-| bg3 (select)   | `#2A2A2A` |
-| border         | `#333333` |
-| fg3 (muted)    | `#5A5A5A` |
-| fg2 (comment)  | `#8A8A8A` |
-| fg1 (2ary)     | `#B8B8B8` |
-| fg0 (primary)  | `#E8E8E8` |
-| accent         | `#6B8EAE` |
-| accent-dim     | `#44607A` |
-| red (error)    | `#B36A6A` |
-| green (ok)     | `#7A9C7A` |
-| yellow (warn)  | `#B8A06A` |
+| Role           | Hex       | Tailwind   |
+|----------------|-----------|------------|
+| bg0 (page)     | `#111827` | gray-900   |
+| bg1 (panel)    | `#1F2937` | gray-800   |
+| bg2 (elevated) | `#374151` | gray-700   |
+| bg3 (select)   | `#4B5563` | gray-600   |
+| border         | `#374151` | gray-700   |
+| fg3 (muted)    | `#4B5563` | gray-600   |
+| fg2 (comment)  | `#6B7280` | gray-500   |
+| fg1 (2ary)     | `#D1D5DB` | gray-300   |
+| fg0 (primary)  | `#F9FAFB` | gray-50    |
+| accent         | `#7B92AC` |            |
+| accent-dim     | `#4B5F7A` |            |
+| red (error)    | `#B36A6A` |            |
+| green (ok)     | `#7A9C7A` |            |
+| yellow (warn)  | `#B8A06A` |            |
 
-## Light
+## Light (cool-gray)
 
-| Role           | Hex       |
-|----------------|-----------|
-| bg0 (page)     | `#FAFAF8` |
-| bg1 (panel)    | `#F2F2F0` |
-| bg2 (elevated) | `#E8E8E6` |
-| bg3 (select)   | `#D8D8D6` |
-| border         | `#C8C8C6` |
-| fg3 (muted)    | `#9A9A9A` |
-| fg2 (comment)  | `#6A6A6A` |
-| fg1 (2ary)     | `#3D3D3D` |
-| fg0 (primary)  | `#1A1A1A` |
-| accent         | `#4A6582` |
-| accent-dim     | `#6B8EAE` |
-| red (error)    | `#944747` |
-| green (ok)     | `#4F6F4F` |
-| yellow (warn)  | `#8A7440` |
+| Role           | Hex       | Tailwind   |
+|----------------|-----------|------------|
+| bg0 (page)     | `#F9FAFB` | gray-50    |
+| bg1 (panel)    | `#F3F4F6` | gray-100   |
+| bg2 (elevated) | `#E5E7EB` | gray-200   |
+| bg3 (select)   | `#D1D5DB` | gray-300   |
+| border         | `#D1D5DB` | gray-300   |
+| fg3 (muted)    | `#9CA3AF` | gray-400   |
+| fg2 (comment)  | `#6B7280` | gray-500   |
+| fg1 (2ary)     | `#374151` | gray-700   |
+| fg0 (primary)  | `#111827` | gray-900   |
+| accent         | `#4A6582` |            |
+| accent-dim     | `#7B92AC` |            |
+| red (error)    | `#944747` |            |
+| green (ok)     | `#4F6F4F` |            |
+| yellow (warn)  | `#8A7440` |            |
