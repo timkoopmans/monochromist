@@ -1,0 +1,299 @@
+/* Monochromist — Obsidian theme
+   Neutral grayscale + single muted slate-blue accent.
+   Fonts: Atkinson Hyperlegible (text), Inter (UI), JetBrains Mono (code). */
+
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+.theme-dark,
+.theme-light {
+  --font-text-theme: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-interface-theme: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-monospace-theme: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --font-text: var(--font-text-theme);
+  --font-interface: var(--font-interface-theme);
+  --font-monospace: var(--font-monospace-theme);
+
+  --font-text-size: 16px;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.35;
+
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+
+  --h1-size: 1.75em;
+  --h2-size: 1.45em;
+  --h3-size: 1.22em;
+  --h4-size: 1.08em;
+  --h5-size: 1em;
+  --h6-size: 0.92em;
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+}
+
+/* ===== DARK ===== */
+.theme-dark {
+  --bg0: #0e0e0e;
+  --bg1: #161616;
+  --bg2: #1e1e1e;
+  --bg3: #2a2a2a;
+  --border: #333333;
+  --fg3: #5a5a5a;
+  --fg2: #8a8a8a;
+  --fg1: #b8b8b8;
+  --fg0: #e8e8e8;
+  --accent: #6b8eae;
+  --accent-dim: #44607a;
+  --red: #b36a6a;
+  --green: #7a9c7a;
+  --yellow: #b8a06a;
+
+  --background-primary: var(--bg0);
+  --background-primary-alt: var(--bg1);
+  --background-secondary: var(--bg1);
+  --background-secondary-alt: var(--bg2);
+  --background-modifier-border: var(--border);
+  --background-modifier-border-hover: var(--fg3);
+  --background-modifier-border-focus: var(--accent);
+  --background-modifier-hover: var(--bg2);
+  --background-modifier-active-hover: var(--bg3);
+  --background-modifier-form-field: var(--bg2);
+  --background-modifier-form-field-highlighted: var(--bg3);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+  --background-modifier-success: rgba(122, 156, 122, 0.18);
+  --background-modifier-error: rgba(179, 106, 106, 0.18);
+  --background-modifier-error-hover: rgba(179, 106, 106, 0.28);
+
+  --text-normal: var(--fg0);
+  --text-muted: var(--fg1);
+  --text-faint: var(--fg2);
+  --text-on-accent: var(--bg0);
+  --text-error: var(--red);
+  --text-success: var(--green);
+  --text-warning: var(--yellow);
+  --text-accent: var(--accent);
+  --text-accent-hover: #88a8c8;
+  --text-selection: rgba(107, 142, 174, 0.30);
+  --text-highlight-bg: rgba(184, 160, 106, 0.28);
+
+  --interactive-normal: var(--bg2);
+  --interactive-hover: var(--bg3);
+  --interactive-accent: var(--accent);
+  --interactive-accent-hover: #88a8c8;
+
+  --caret-color: var(--fg0);
+  --code-background: var(--bg2);
+  --code-normal: var(--fg0);
+  --code-comment: var(--fg2);
+  --code-keyword: var(--fg1);
+  --code-string: var(--fg1);
+  --code-value: var(--fg1);
+  --code-function: var(--fg0);
+  --code-tag: var(--fg0);
+  --code-property: var(--fg0);
+  --code-punctuation: var(--fg2);
+
+  --titlebar-background: var(--bg0);
+  --titlebar-background-focused: var(--bg0);
+  --titlebar-text-color: var(--fg1);
+  --titlebar-text-color-focused: var(--fg0);
+
+  --tab-background-active: var(--bg1);
+  --tab-text-color-focused-active: var(--fg0);
+
+  --divider-color: var(--border);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(90, 90, 90, 0.35);
+  --scrollbar-active-thumb-bg: rgba(138, 138, 138, 0.7);
+
+  --tag-background: var(--bg2);
+  --tag-color: var(--accent);
+
+  --link-color: var(--accent);
+  --link-color-hover: #88a8c8;
+  --link-external-color: var(--accent);
+  --link-unresolved-color: var(--red);
+
+  --blockquote-border-color: var(--accent-dim);
+  --blockquote-background-color: transparent;
+
+  --table-border-color: var(--border);
+  --table-header-background: var(--bg1);
+  --table-row-alt-background: var(--bg1);
+
+  --checkbox-color: var(--accent);
+  --checkbox-color-hover: #88a8c8;
+  --checkbox-marker-color: var(--bg0);
+  --checkbox-border-color: var(--fg3);
+
+  --modal-background: var(--bg1);
+  --modal-border-color: var(--border);
+}
+
+/* ===== LIGHT ===== */
+.theme-light {
+  --bg0: #fafaf8;
+  --bg1: #f2f2f0;
+  --bg2: #e8e8e6;
+  --bg3: #d8d8d6;
+  --border: #c8c8c6;
+  --fg3: #9a9a9a;
+  --fg2: #6a6a6a;
+  --fg1: #3d3d3d;
+  --fg0: #1a1a1a;
+  --accent: #4a6582;
+  --accent-dim: #6b8eae;
+  --red: #944747;
+  --green: #4f6f4f;
+  --yellow: #8a7440;
+
+  --background-primary: var(--bg0);
+  --background-primary-alt: var(--bg1);
+  --background-secondary: var(--bg1);
+  --background-secondary-alt: var(--bg2);
+  --background-modifier-border: var(--border);
+  --background-modifier-border-hover: var(--fg3);
+  --background-modifier-border-focus: var(--accent);
+  --background-modifier-hover: var(--bg2);
+  --background-modifier-active-hover: var(--bg3);
+  --background-modifier-form-field: var(--bg1);
+  --background-modifier-form-field-highlighted: var(--bg2);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.08);
+  --background-modifier-success: rgba(79, 111, 79, 0.18);
+  --background-modifier-error: rgba(148, 71, 71, 0.18);
+  --background-modifier-error-hover: rgba(148, 71, 71, 0.28);
+
+  --text-normal: var(--fg0);
+  --text-muted: var(--fg1);
+  --text-faint: var(--fg2);
+  --text-on-accent: var(--bg0);
+  --text-error: var(--red);
+  --text-success: var(--green);
+  --text-warning: var(--yellow);
+  --text-accent: var(--accent);
+  --text-accent-hover: #6b8eae;
+  --text-selection: rgba(74, 101, 130, 0.22);
+  --text-highlight-bg: rgba(138, 116, 64, 0.24);
+
+  --interactive-normal: var(--bg1);
+  --interactive-hover: var(--bg2);
+  --interactive-accent: var(--accent);
+  --interactive-accent-hover: #6b8eae;
+
+  --caret-color: var(--fg0);
+  --code-background: var(--bg1);
+  --code-normal: var(--fg0);
+  --code-comment: var(--fg2);
+  --code-keyword: var(--fg1);
+  --code-string: var(--fg1);
+  --code-value: var(--fg1);
+  --code-function: var(--fg0);
+  --code-tag: var(--fg0);
+  --code-property: var(--fg0);
+  --code-punctuation: var(--fg2);
+
+  --titlebar-background: var(--bg0);
+  --titlebar-background-focused: var(--bg0);
+  --titlebar-text-color: var(--fg1);
+  --titlebar-text-color-focused: var(--fg0);
+
+  --tab-background-active: var(--bg1);
+  --tab-text-color-focused-active: var(--fg0);
+
+  --divider-color: var(--border);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(154, 154, 154, 0.40);
+  --scrollbar-active-thumb-bg: rgba(106, 106, 106, 0.8);
+
+  --tag-background: var(--bg2);
+  --tag-color: var(--accent);
+
+  --link-color: var(--accent);
+  --link-color-hover: #6b8eae;
+  --link-external-color: var(--accent);
+  --link-unresolved-color: var(--red);
+
+  --blockquote-border-color: var(--accent-dim);
+  --blockquote-background-color: transparent;
+
+  --table-border-color: var(--border);
+  --table-header-background: var(--bg1);
+  --table-row-alt-background: var(--bg1);
+
+  --checkbox-color: var(--accent);
+  --checkbox-color-hover: #6b8eae;
+  --checkbox-marker-color: var(--bg0);
+  --checkbox-border-color: var(--fg3);
+
+  --modal-background: var(--bg0);
+  --modal-border-color: var(--border);
+}
+
+/* ===== shared polish ===== */
+.markdown-preview-view,
+.markdown-source-view {
+  font-family: var(--font-text);
+  line-height: var(--line-height-normal);
+}
+
+.markdown-preview-view code,
+.markdown-source-view code,
+pre, code, kbd, samp {
+  font-family: var(--font-monospace);
+  font-feature-settings: "calt" 1, "ss01" 1;
+}
+
+.workspace,
+.workspace-tab-header,
+.nav-folder-title,
+.nav-file-title,
+.menu,
+.modal,
+.suggestion-container,
+.status-bar,
+.titlebar {
+  font-family: var(--font-interface);
+}
+
+/* Tighter, paper-like headings */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.cm-header {
+  font-family: var(--font-text);
+  letter-spacing: -0.005em;
+}
+
+/* Subtle horizontal rule */
+.markdown-preview-view hr,
+.cm-hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5em 0;
+}
+
+/* Block quote */
+.markdown-preview-view blockquote,
+.cm-quote {
+  border-left: 2px solid var(--blockquote-border-color);
+  padding-left: 0.9em;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Inline code chip */
+.markdown-preview-view :not(pre) > code {
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-s);
+  background: var(--code-background);
+  border: 1px solid var(--border);
+  font-size: 0.92em;
+}
