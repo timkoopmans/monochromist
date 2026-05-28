@@ -21,16 +21,18 @@ Cool-tinted neutral grayscale + single muted slate-blue accent. Based on Tailwin
 | green (ok)     | `#7A9C7A` |            |
 | yellow (warn)  | `#B8A06A` |            |
 
-## Light (cool-gray)
+## Light (cool paper)
 
-| Role           | Hex       | Tailwind   |
+Off-white cool paper page, not pure white. Foreground stays Tailwind gray.
+
+| Role           | Hex       | Note       |
 |----------------|-----------|------------|
-| bg0 (page)     | `#F9FAFB` | gray-50    |
-| bg1 (panel)    | `#F3F4F6` | gray-100   |
-| bg2 (elevated) | `#E5E7EB` | gray-200   |
-| bg3 (select)   | `#D1D5DB` | gray-300   |
-| border         | `#D1D5DB` | gray-300   |
-| fg3 (muted)    | `#9CA3AF` | gray-400   |
+| bg0 (page)     | `#ECEEF1` | cool paper |
+| bg1 (panel)    | `#E3E6EA` |            |
+| bg2 (elevated) | `#D8DCE0` |            |
+| bg3 (select)   | `#C8CDD3` |            |
+| border         | `#C8CDD3` |            |
+| fg3 (muted)    | `#A5ABB3` |            |
 | fg2 (comment)  | `#6B7280` | gray-500   |
 | fg1 (2ary)     | `#374151` | gray-700   |
 | fg0 (primary)  | `#111827` | gray-900   |

@@ -135,14 +135,14 @@
   --modal-border-color: var(--border);
 }
 
-/* ===== LIGHT (cool-gray) ===== */
+/* ===== LIGHT (cool paper) ===== */
 .theme-light {
-  --bg0: #f9fafb;
-  --bg1: #f3f4f6;
-  --bg2: #e5e7eb;
-  --bg3: #d1d5db;
-  --border: #d1d5db;
-  --fg3: #9ca3af;
+  --bg0: #eceef1;
+  --bg1: #e3e6ea;
+  --bg2: #d8dce0;
+  --bg3: #c8cdd3;
+  --border: #c8cdd3;
+  --fg3: #a5abb3;
   --fg2: #6b7280;
   --fg1: #374151;
   --fg0: #111827;
