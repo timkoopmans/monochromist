@@ -56,43 +56,46 @@ def build(palette, out):
 """
     out.write_text(plist)
 
-# Strict grayscale ramp:
-# F4F4F4 E3E3E3 D2D2D2 C0C0C0 AFAFAF 9D9D9D 8C8C8C 7A7A7A 696969 575757 464646 343434 232323 111111
+# Palette:
+# bright-snow #f8f9fa  platinum #e9ecef  alabaster-grey #dee2e6
+# pale-slate #ced4da   pale-slate-2 #adb5bd   slate-grey #6c757d
+# iron-grey #495057    gunmetal #343a40       carbon-black #212529
+# semantic: red #d97f7f / #b03a3a   green #7fc09a / #2e6e46
 
 dark = {
     "ansi": [
-        "#343434", "#C0C0C0", "#9D9D9D", "#AFAFAF",
-        "#D2D2D2", "#8C8C8C", "#C0C0C0", "#E3E3E3",
-        "#575757", "#E3E3E3", "#AFAFAF", "#C0C0C0",
-        "#E3E3E3", "#9D9D9D", "#D2D2D2", "#F4F4F4",
+        "#343A40", "#D97F7F", "#7FC09A", "#CED4DA",
+        "#DEE2E6", "#ADB5BD", "#CED4DA", "#DEE2E6",
+        "#6C757D", "#E8A5A5", "#A5D4B8", "#E9ECEF",
+        "#E9ECEF", "#CED4DA", "#E9ECEF", "#F8F9FA",
     ],
-    "bg": "#343434",
-    "fg": "#E3E3E3",
-    "bold": "#F4F4F4",
-    "cursor": "#F4F4F4",
-    "cursor_text": "#343434",
-    "selection": "#575757",
-    "selected_text": "#F4F4F4",
-    "link": "#F4F4F4",
-    "accent": "#F4F4F4",
+    "bg": "#343A40",
+    "fg": "#DEE2E6",
+    "bold": "#F8F9FA",
+    "cursor": "#F8F9FA",
+    "cursor_text": "#343A40",
+    "selection": "#495057",
+    "selected_text": "#F8F9FA",
+    "link": "#F8F9FA",
+    "accent": "#F8F9FA",
 }
 
 light = {
     "ansi": [
-        "#111111", "#464646", "#696969", "#575757",
-        "#343434", "#7A7A7A", "#464646", "#E3E3E3",
-        "#696969", "#232323", "#575757", "#464646",
-        "#232323", "#696969", "#343434", "#F4F4F4",
+        "#212529", "#B03A3A", "#2E6E46", "#495057",
+        "#212529", "#495057", "#343A40", "#DEE2E6",
+        "#495057", "#C75252", "#3E8C5A", "#343A40",
+        "#000000", "#343A40", "#212529", "#F8F9FA",
     ],
-    "bg": "#F4F4F4",
-    "fg": "#232323",
-    "bold": "#111111",
-    "cursor": "#111111",
-    "cursor_text": "#F4F4F4",
-    "selection": "#C0C0C0",
-    "selected_text": "#111111",
-    "link": "#111111",
-    "accent": "#111111",
+    "bg": "#F8F9FA",
+    "fg": "#212529",
+    "bold": "#000000",
+    "cursor": "#212529",
+    "cursor_text": "#F8F9FA",
+    "selection": "#CED4DA",
+    "selected_text": "#212529",
+    "link": "#212529",
+    "accent": "#212529",
 }
 
 root = Path(__file__).resolve().parent.parent / "iterm2"
