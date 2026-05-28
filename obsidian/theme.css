@@ -1,275 +1,273 @@
 /* Monochromist — Obsidian theme
-   Bootstrap-inspired cool grayscale + green/red semantic accents.
+   One Dark/Light chrome + monochromatic code syntax.
    Fonts: Atkinson Hyperlegible (text), Inter (UI), JetBrains Mono (code). */
 
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 
 .theme-dark,
 .theme-light {
-  --font-text-theme: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  --font-interface-theme: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  --font-monospace-theme: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --font-text-theme:
+        "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        system-ui, sans-serif;
+    --font-interface-theme:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+        sans-serif;
+    --font-monospace-theme:
+        "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  --font-text: var(--font-text-theme);
-  --font-interface: var(--font-interface-theme);
-  --font-monospace: var(--font-monospace-theme);
+    --font-text: var(--font-text-theme);
+    --font-interface: var(--font-interface-theme);
+    --font-monospace: var(--font-monospace-theme);
 
-  --font-text-size: 16px;
-  --line-height-normal: 1.65;
-  --line-height-tight: 1.35;
+    --font-text-size: 16px;
+    --line-height-normal: 1.65;
+    --line-height-tight: 1.35;
 
-  --radius-s: 4px;
-  --radius-m: 6px;
-  --radius-l: 8px;
+    --radius-s: 4px;
+    --radius-m: 6px;
+    --radius-l: 8px;
 
-  --h1-size: 1.75em;
-  --h2-size: 1.45em;
-  --h3-size: 1.22em;
-  --h4-size: 1.08em;
-  --h5-size: 1em;
-  --h6-size: 0.92em;
-  --h1-weight: 700;
-  --h2-weight: 700;
-  --h3-weight: 600;
-  --h4-weight: 600;
-  --h5-weight: 600;
-  --h6-weight: 600;
+    --h1-size: 1.75em;
+    --h2-size: 1.45em;
+    --h3-size: 1.22em;
+    --h4-size: 1.08em;
+    --h5-size: 1em;
+    --h6-size: 0.92em;
+    --h1-weight: 700;
+    --h2-weight: 700;
+    --h3-weight: 600;
+    --h4-weight: 600;
+    --h5-weight: 600;
+    --h6-weight: 600;
 }
 
-/* ===== DARK ===== */
+/* ===== DARK — One Dark chrome ===== */
 .theme-dark {
-  --bright-snow: #f8f9fa;
-  --platinum: #e9ecef;
-  --alabaster-grey: #dee2e6;
-  --pale-slate: #ced4da;
-  --pale-slate-2: #adb5bd;
-  --slate-grey: #6c757d;
-  --iron-grey: #495057;
-  --gunmetal: #343a40;
-  --carbon-black: #212529;
+    /* One Dark palette */
+    --bg-editor: #282c33;
+    --bg-panel: #2f343e;
+    --bg-app: #3b414d;
+    --bg-hover: #363c46;
+    --bg-active: #454a56;
+    --color-border: #464b57;
+    --fg0: #dce0e5;
+    --fg1: #a9afbc;
+    --fg2: #878a98;
+    --fg3: #636d83;
+    --accent: #74ade8;
+    --accent-hover: #9dc5efff;
 
-  --bg0: var(--gunmetal);
-  --bg1: var(--iron-grey);
-  --bg2: var(--slate-grey);
-  --bg3: var(--pale-slate-2);
-  --border: var(--iron-grey);
-  --fg3: var(--slate-grey);
-  --fg2: var(--pale-slate-2);
-  --fg1: var(--pale-slate);
-  --fg0: var(--alabaster-grey);
-  --accent: var(--bright-snow);
-  --accent-dim: var(--pale-slate);
+    --red: #d07277;
+    --red-dim: #a7545a;
+    --green: #a1c181;
+    --green-dim: #6d8f59;
 
-  --red: #d97f7f;
-  --red-dim: #8c4242;
-  --green: #7fc09a;
-  --green-dim: #4f7d63;
+    --background-primary: var(--bg-editor);
+    --background-primary-alt: var(--bg-panel);
+    --background-secondary: var(--bg-panel);
+    --background-secondary-alt: var(--bg-hover);
+    --background-modifier-border: var(--color-border);
+    --background-modifier-border-hover: #545a68;
+    --background-modifier-border-focus: var(--accent);
+    --background-modifier-hover: var(--bg-hover);
+    --background-modifier-active-hover: var(--bg-active);
+    --background-modifier-form-field: var(--bg-hover);
+    --background-modifier-form-field-highlighted: var(--bg-active);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+    --background-modifier-success: rgba(161, 193, 129, 0.15);
+    --background-modifier-error: rgba(208, 114, 119, 0.15);
+    --background-modifier-error-hover: rgba(208, 114, 119, 0.25);
 
-  --background-primary: var(--bg0);
-  --background-primary-alt: var(--bg1);
-  --background-secondary: var(--bg1);
-  --background-secondary-alt: var(--bg2);
-  --background-modifier-border: var(--border);
-  --background-modifier-border-hover: var(--fg3);
-  --background-modifier-border-focus: var(--accent);
-  --background-modifier-hover: var(--bg2);
-  --background-modifier-active-hover: var(--bg3);
-  --background-modifier-form-field: var(--bg2);
-  --background-modifier-form-field-highlighted: var(--bg3);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
-  --background-modifier-success: rgba(127, 192, 154, 0.16);
-  --background-modifier-error:   rgba(217, 127, 127, 0.16);
-  --background-modifier-error-hover: rgba(217, 127, 127, 0.26);
+    --text-normal: var(--fg0);
+    --text-muted: var(--fg1);
+    --text-faint: var(--fg2);
+    --text-on-accent: var(--bg-editor);
+    --text-error: var(--red);
+    --text-success: var(--green);
+    --text-warning: #dec184;
+    --text-accent: var(--accent);
+    --text-accent-hover: var(--accent-hover);
+    --text-selection: rgba(116, 173, 232, 0.2);
+    --text-highlight-bg: rgba(116, 173, 232, 0.18);
 
-  --text-normal: var(--fg0);
-  --text-muted: var(--fg1);
-  --text-faint: var(--fg2);
-  --text-on-accent: var(--bg0);
-  --text-error: var(--red);
-  --text-success: var(--green);
-  --text-warning: var(--pale-slate);
-  --text-accent: var(--accent);
-  --text-accent-hover: #ffffff;
-  --text-selection: rgba(248, 249, 250, 0.20);
-  --text-highlight-bg: rgba(248, 249, 250, 0.16);
+    --interactive-normal: var(--bg-panel);
+    --interactive-hover: var(--bg-hover);
+    --interactive-accent: var(--accent);
+    --interactive-accent-hover: var(--accent-hover);
 
-  --interactive-normal: var(--bg1);
-  --interactive-hover: var(--bg2);
-  --interactive-accent: var(--accent);
-  --interactive-accent-hover: #ffffff;
+    --caret-color: var(--fg0);
 
-  --caret-color: var(--fg0);
-  --code-background: var(--bg1);
-  --code-normal: var(--fg0);
-  --code-comment: var(--slate-grey);
-  --code-keyword: var(--accent);
-  --code-string: var(--pale-slate-2);
-  --code-value: var(--accent);
-  --code-function: var(--fg0);
-  --code-tag: var(--accent);
-  --code-property: var(--fg1);
-  --code-punctuation: var(--pale-slate-2);
+    /* code syntax — monochromatic */
+    --code-background: var(--bg-panel);
+    --code-normal: #dce0e5;
+    --code-comment: #5d636f;
+    --code-keyword: #f8f9fa;
+    --code-string: #a9afbc;
+    --code-value: #dce0e5;
+    --code-function: #dce0e5;
+    --code-tag: #f8f9fa;
+    --code-property: #a9afbc;
+    --code-punctuation: #878a98;
 
-  --titlebar-background: var(--bg0);
-  --titlebar-background-focused: var(--bg0);
-  --titlebar-text-color: var(--fg1);
-  --titlebar-text-color-focused: var(--fg0);
+    --titlebar-background: var(--bg-app);
+    --titlebar-background-focused: var(--bg-app);
+    --titlebar-text-color: var(--fg1);
+    --titlebar-text-color-focused: var(--fg0);
 
-  --tab-background-active: var(--bg1);
-  --tab-text-color-focused-active: var(--fg0);
+    --tab-background-active: var(--bg-editor);
+    --tab-text-color-focused-active: var(--fg0);
 
-  --divider-color: var(--border);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: rgba(108, 117, 125, 0.35);
-  --scrollbar-active-thumb-bg: rgba(206, 212, 218, 0.7);
+    --divider-color: var(--color-border);
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(200, 204, 212, 0.3);
+    --scrollbar-active-thumb-bg: rgba(200, 204, 212, 0.55);
 
-  --tag-background: var(--bg2);
-  --tag-color: var(--accent);
+    --tag-background: var(--bg-hover);
+    --tag-color: var(--accent);
 
-  --link-color: var(--accent);
-  --link-color-hover: #ffffff;
-  --link-external-color: var(--accent);
-  --link-unresolved-color: var(--red);
+    --link-color: var(--accent);
+    --link-color-hover: var(--accent-hover);
+    --link-external-color: var(--accent);
+    --link-unresolved-color: var(--red);
 
-  --blockquote-border-color: var(--slate-grey);
-  --blockquote-background-color: transparent;
+    --blockquote-border-color: #545a68;
+    --blockquote-background-color: transparent;
 
-  --table-border-color: var(--border);
-  --table-header-background: var(--bg1);
-  --table-row-alt-background: var(--bg1);
+    --table-border-color: var(--color-border);
+    --table-header-background: var(--bg-panel);
+    --table-row-alt-background: var(--bg-panel);
 
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: #ffffff;
-  --checkbox-marker-color: var(--bg0);
-  --checkbox-border-color: var(--fg3);
+    --checkbox-color: var(--accent);
+    --checkbox-color-hover: var(--accent-hover);
+    --checkbox-marker-color: var(--bg-editor);
+    --checkbox-border-color: var(--fg3);
 
-  --modal-background: var(--bg1);
-  --modal-border-color: var(--border);
+    --modal-background: var(--bg-panel);
+    --modal-border-color: var(--color-border);
 }
 
-/* ===== LIGHT ===== */
+/* ===== LIGHT — One Light chrome ===== */
 .theme-light {
-  --bright-snow: #f8f9fa;
-  --platinum: #e9ecef;
-  --alabaster-grey: #dee2e6;
-  --pale-slate: #ced4da;
-  --pale-slate-2: #adb5bd;
-  --slate-grey: #6c757d;
-  --iron-grey: #495057;
-  --gunmetal: #343a40;
-  --carbon-black: #212529;
+    /* One Light palette */
+    --bg-editor: #fafafa;
+    --bg-panel: #ebebec;
+    --bg-app: #dcdcdd;
+    --bg-hover: #dfdfe0;
+    --bg-active: #cacaca;
+    --color-border: #c9c9ca;
+    --fg0: #242529;
+    --fg1: #58585a;
+    --fg2: #7e8086;
+    --fg3: #9b9ea6;
+    --accent: #5c78e2;
+    --accent-hover: #3a5ad4;
 
-  --bg0: var(--bright-snow);
-  --bg1: var(--platinum);
-  --bg2: var(--alabaster-grey);
-  --bg3: var(--pale-slate);
-  --border: var(--pale-slate);
-  --fg3: var(--pale-slate-2);
-  --fg2: var(--slate-grey);
-  --fg1: var(--iron-grey);
-  --fg0: var(--carbon-black);
-  --accent: var(--carbon-black);
-  --accent-dim: var(--iron-grey);
+    --red: #d36151;
+    --red-dim: #9c2b26;
+    --green: #669f59;
+    --green-dim: #2b6927;
 
-  --red: #b03a3a;
-  --red-dim: #7a2828;
-  --green: #2e6e46;
-  --green-dim: #1f4d30;
+    --background-primary: var(--bg-editor);
+    --background-primary-alt: var(--bg-panel);
+    --background-secondary: var(--bg-panel);
+    --background-secondary-alt: var(--bg-hover);
+    --background-modifier-border: var(--color-border);
+    --background-modifier-border-hover: #adadae;
+    --background-modifier-border-focus: var(--accent);
+    --background-modifier-hover: var(--bg-hover);
+    --background-modifier-active-hover: var(--bg-active);
+    --background-modifier-form-field: var(--bg-panel);
+    --background-modifier-form-field-highlighted: var(--bg-hover);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.08);
+    --background-modifier-success: rgba(102, 159, 89, 0.12);
+    --background-modifier-error: rgba(211, 97, 81, 0.12);
+    --background-modifier-error-hover: rgba(211, 97, 81, 0.2);
 
-  --background-primary: var(--bg0);
-  --background-primary-alt: var(--bg1);
-  --background-secondary: var(--bg1);
-  --background-secondary-alt: var(--bg2);
-  --background-modifier-border: var(--border);
-  --background-modifier-border-hover: var(--fg3);
-  --background-modifier-border-focus: var(--accent);
-  --background-modifier-hover: var(--bg2);
-  --background-modifier-active-hover: var(--bg3);
-  --background-modifier-form-field: var(--bg1);
-  --background-modifier-form-field-highlighted: var(--bg2);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.08);
-  --background-modifier-success: rgba(46, 110, 70, 0.10);
-  --background-modifier-error:   rgba(176, 58, 58, 0.10);
-  --background-modifier-error-hover: rgba(176, 58, 58, 0.18);
+    --text-normal: var(--fg0);
+    --text-muted: var(--fg1);
+    --text-faint: var(--fg2);
+    --text-on-accent: var(--bg-editor);
+    --text-error: var(--red);
+    --text-success: var(--green);
+    --text-warning: #a48819;
+    --text-accent: var(--accent);
+    --text-accent-hover: var(--accent-hover);
+    --text-selection: rgba(92, 120, 226, 0.18);
+    --text-highlight-bg: rgba(92, 120, 226, 0.15);
 
-  --text-normal: var(--fg0);
-  --text-muted: var(--fg1);
-  --text-faint: var(--fg2);
-  --text-on-accent: var(--bg0);
-  --text-error: var(--red);
-  --text-success: var(--green);
-  --text-warning: var(--iron-grey);
-  --text-accent: var(--accent);
-  --text-accent-hover: #000000;
-  --text-selection: rgba(33, 37, 41, 0.18);
-  --text-highlight-bg: rgba(33, 37, 41, 0.14);
+    --interactive-normal: var(--bg-panel);
+    --interactive-hover: var(--bg-hover);
+    --interactive-accent: var(--accent);
+    --interactive-accent-hover: var(--accent-hover);
 
-  --interactive-normal: var(--bg1);
-  --interactive-hover: var(--bg2);
-  --interactive-accent: var(--accent);
-  --interactive-accent-hover: #000000;
+    --caret-color: var(--fg0);
 
-  --caret-color: var(--fg0);
-  --code-background: var(--bg1);
-  --code-normal: var(--fg0);
-  --code-comment: var(--slate-grey);
-  --code-keyword: var(--accent);
-  --code-string: var(--iron-grey);
-  --code-value: var(--accent);
-  --code-function: var(--fg0);
-  --code-tag: var(--accent);
-  --code-property: var(--gunmetal);
-  --code-punctuation: var(--slate-grey);
+    /* code syntax — monochromatic */
+    --code-background: var(--bg-panel);
+    --code-normal: #242529;
+    --code-comment: #7e8086;
+    --code-keyword: #000000;
+    --code-string: #495057;
+    --code-value: #212529;
+    --code-function: #212529;
+    --code-tag: #000000;
+    --code-property: #343a40;
+    --code-punctuation: #6c757d;
 
-  --titlebar-background: var(--bg0);
-  --titlebar-background-focused: var(--bg0);
-  --titlebar-text-color: var(--fg1);
-  --titlebar-text-color-focused: var(--fg0);
+    --titlebar-background: var(--bg-app);
+    --titlebar-background-focused: var(--bg-app);
+    --titlebar-text-color: var(--fg1);
+    --titlebar-text-color-focused: var(--fg0);
 
-  --tab-background-active: var(--bg1);
-  --tab-text-color-focused-active: var(--fg0);
+    --tab-background-active: var(--bg-editor);
+    --tab-text-color-focused-active: var(--fg0);
 
-  --divider-color: var(--border);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: rgba(108, 117, 125, 0.40);
-  --scrollbar-active-thumb-bg: rgba(33, 37, 41, 0.8);
+    --divider-color: var(--color-border);
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(56, 58, 65, 0.3);
+    --scrollbar-active-thumb-bg: rgba(56, 58, 65, 0.55);
 
-  --tag-background: var(--bg2);
-  --tag-color: var(--accent);
+    --tag-background: var(--bg-hover);
+    --tag-color: var(--accent);
 
-  --link-color: var(--accent);
-  --link-color-hover: #000000;
-  --link-external-color: var(--accent);
-  --link-unresolved-color: var(--red);
+    --link-color: var(--accent);
+    --link-color-hover: var(--accent-hover);
+    --link-external-color: var(--accent);
+    --link-unresolved-color: var(--red);
 
-  --blockquote-border-color: var(--slate-grey);
-  --blockquote-background-color: transparent;
+    --blockquote-border-color: #adadae;
+    --blockquote-background-color: transparent;
 
-  --table-border-color: var(--border);
-  --table-header-background: var(--bg1);
-  --table-row-alt-background: var(--bg1);
+    --table-border-color: var(--color-border);
+    --table-header-background: var(--bg-panel);
+    --table-row-alt-background: var(--bg-panel);
 
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: #000000;
-  --checkbox-marker-color: var(--bg0);
-  --checkbox-border-color: var(--fg3);
+    --checkbox-color: var(--accent);
+    --checkbox-color-hover: var(--accent-hover);
+    --checkbox-marker-color: var(--bg-editor);
+    --checkbox-border-color: var(--fg3);
 
-  --modal-background: var(--bg0);
-  --modal-border-color: var(--border);
+    --modal-background: var(--bg-editor);
+    --modal-border-color: var(--color-border);
 }
 
 /* ===== shared polish ===== */
 .markdown-preview-view,
 .markdown-source-view {
-  font-family: var(--font-text);
-  line-height: var(--line-height-normal);
+    font-family: var(--font-text);
+    line-height: var(--line-height-normal);
 }
 
 .markdown-preview-view code,
 .markdown-source-view code,
-pre, code, kbd, samp {
-  font-family: var(--font-monospace);
-  font-feature-settings: "calt" 1, "ss01" 1;
+pre,
+code,
+kbd,
+samp {
+    font-family: var(--font-monospace);
+    font-feature-settings:
+        "calt" 1,
+        "ss01" 1;
 }
 
 .workspace,
@@ -281,7 +279,7 @@ pre, code, kbd, samp {
 .suggestion-container,
 .status-bar,
 .titlebar {
-  font-family: var(--font-interface);
+    font-family: var(--font-interface);
 }
 
 .markdown-preview-view h1,
@@ -291,29 +289,29 @@ pre, code, kbd, samp {
 .markdown-preview-view h5,
 .markdown-preview-view h6,
 .cm-header {
-  font-family: var(--font-text);
-  letter-spacing: -0.005em;
+    font-family: var(--font-text);
+    letter-spacing: -0.005em;
 }
 
 .markdown-preview-view hr,
 .cm-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 1.5em 0;
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 1.5em 0;
 }
 
 .markdown-preview-view blockquote,
 .cm-quote {
-  border-left: 2px solid var(--blockquote-border-color);
-  padding-left: 0.9em;
-  color: var(--text-muted);
-  font-style: italic;
+    border-left: 2px solid var(--blockquote-border-color);
+    padding-left: 0.9em;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 .markdown-preview-view :not(pre) > code {
-  padding: 0.1em 0.35em;
-  border-radius: var(--radius-s);
-  background: var(--code-background);
-  border: 1px solid var(--border);
-  font-size: 0.92em;
+    padding: 0.1em 0.35em;
+    border-radius: var(--radius-s);
+    background: var(--code-background);
+    border: 1px solid var(--color-border);
+    font-size: 0.92em;
 }

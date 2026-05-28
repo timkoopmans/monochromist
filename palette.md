@@ -1,60 +1,77 @@
 # monochromist palette
 
-Bootstrap-inspired cool grayscale + green/red semantic accents for diff/diagnostics.
+One Dark/Light chrome with monochromatic code syntax. Dark + light variants.
 
-## Mono ramp (single source of truth)
+## Design principle
 
-| Name             | Hex       |
-|------------------|-----------|
-| bright-snow      | `#F8F9FA` |
-| platinum         | `#E9ECEF` |
-| alabaster-grey   | `#DEE2E6` |
-| pale-slate       | `#CED4DA` |
-| pale-slate-2     | `#ADB5BD` |
-| slate-grey       | `#6C757D` |
-| iron-grey        | `#495057` |
-| gunmetal         | `#343A40` |
-| carbon-black     | `#212529` |
+UI chrome (backgrounds, borders, panels, status indicators) uses the One Dark / One Light palette verbatim. Code syntax highlighting uses only grays — no hue in the editor.
 
-## Semantic (allowed colors)
+## Dark chrome — One Dark
 
-| Role         | Dark        | Light       |
-|--------------|-------------|-------------|
-| red/error    | `#D97F7F`   | `#B03A3A`   |
-| red dim      | `#8C4242`   | `#7A2828`   |
-| green/ok     | `#7FC09A`   | `#2E6E46`   |
-| green dim    | `#4F7D63`   | `#1F4D30`   |
+| Role                        | Hex       |
+|-----------------------------|-----------|
+| editor background           | `#282c33` |
+| panel / sidebar background  | `#2f343e` |
+| app / titlebar background   | `#3b414d` |
+| hover                       | `#363c46` |
+| active / selected           | `#454a56` |
+| border                      | `#464b57` |
+| primary text                | `#dce0e5` |
+| muted text                  | `#a9afbc` |
+| faint / placeholder         | `#878a98` |
+| very faint                  | `#636d83` |
+| accent (links, cursor)      | `#74ade8` |
+| error / deleted             | `#d07277` |
+| success / created           | `#a1c181` |
+| warning / modified          | `#dec184` |
 
-Used only for: errors, diff add/remove, success states. Warnings stay grayscale.
+## Dark syntax — monochromatic
 
-## Dark (bg gunmetal)
+| Role        | Hex       |
+|-------------|-----------|
+| keyword     | `#f8f9fa` bold |
+| tag / type  | `#f8f9fa` bold |
+| constant    | `#f8f9fa` |
+| variable    | `#dee2e6` |
+| function    | `#dee2e6` |
+| property    | `#ced4da` |
+| string      | `#adb5bd` |
+| punctuation | `#adb5bd` |
+| comment     | `#5d636f` italic |
 
-| Role            | Hex       |
-|-----------------|-----------|
-| bg0 (page)      | `#343A40` gunmetal |
-| bg1 (panel)     | `#495057` iron-grey |
-| bg2 (elevated)  | `#6C757D` slate-grey |
-| bg3 (select)    | `#ADB5BD` pale-slate-2 |
-| border          | `#495057` |
-| fg3 (disabled)  | `#6C757D` |
-| fg2 (comment)   | `#ADB5BD` italic |
-| fg1 (muted)     | `#CED4DA` |
-| property        | `#CED4DA` |
-| primary         | `#DEE2E6` |
-| accent/emphasis | `#F8F9FA` bright-snow |
+## Light chrome — One Light
 
-## Light (bg bright-snow)
+| Role                        | Hex       |
+|-----------------------------|-----------|
+| editor background           | `#fafafa` |
+| panel / sidebar background  | `#ebebec` |
+| app / titlebar background   | `#dcdcdd` |
+| hover                       | `#dfdfe0` |
+| active / selected           | `#cacaca` |
+| border                      | `#c9c9ca` |
+| primary text                | `#242529` |
+| muted text                  | `#58585a` |
+| faint / placeholder         | `#7e8086` |
+| very faint                  | `#9b9ea6` |
+| accent (links, cursor)      | `#5c78e2` |
+| error / deleted             | `#d36151` |
+| success / created           | `#669f59` |
+| warning / modified          | `#a48819` |
 
-| Role            | Hex       |
-|-----------------|-----------|
-| bg0 (page)      | `#F8F9FA` bright-snow |
-| bg1 (panel)     | `#E9ECEF` platinum |
-| bg2 (elevated)  | `#DEE2E6` alabaster-grey |
-| bg3 (select)    | `#CED4DA` pale-slate |
-| border          | `#CED4DA` |
-| fg-disabled     | `#ADB5BD` |
-| fg2 (comment)   | `#6C757D` slate-grey italic |
-| fg1 (muted)     | `#495057` iron-grey |
-| property        | `#343A40` gunmetal |
-| primary         | `#212529` carbon-black |
-| accent/emphasis | `#212529` carbon-black |
+## Light syntax — monochromatic
+
+| Role        | Hex       |
+|-------------|-----------|
+| keyword     | `#000000` bold |
+| tag / type  | `#000000` bold |
+| constant    | `#212529` |
+| variable    | `#212529` |
+| function    | `#212529` |
+| property    | `#343a40` |
+| string      | `#495057` |
+| punctuation | `#6c757d` |
+| comment     | `#7e8086` italic |
+
+## Terminal ANSI
+
+Both variants use standard One Dark / One Light ANSI palettes (functional colors for `ls`, `git diff`, etc.).
