@@ -56,40 +56,43 @@ def build(palette, out):
 """
     out.write_text(plist)
 
+# Strict grayscale ramp:
+# F4F4F4 E3E3E3 D2D2D2 C0C0C0 AFAFAF 9D9D9D 8C8C8C 7A7A7A 696969 575757 464646 343434 232323 111111
+
 dark = {
     "ansi": [
-        "#343434", "#B36A6A", "#7A9C7A", "#B8A06A",
-        "#4FA8AB", "#909090", "#C8C8C8", "#EAEAEA",
-        "#555555", "#C88080", "#94B894", "#D4BC80",
-        "#6FBFC2", "#A0A0A0", "#DCDCDC", "#FFFFFF",
+        "#343434", "#C0C0C0", "#9D9D9D", "#AFAFAF",
+        "#D2D2D2", "#8C8C8C", "#C0C0C0", "#E3E3E3",
+        "#575757", "#E3E3E3", "#AFAFAF", "#C0C0C0",
+        "#E3E3E3", "#9D9D9D", "#D2D2D2", "#F4F4F4",
     ],
     "bg": "#343434",
-    "fg": "#EAEAEA",
-    "bold": "#FFFFFF",
-    "cursor": "#EAEAEA",
+    "fg": "#E3E3E3",
+    "bold": "#F4F4F4",
+    "cursor": "#F4F4F4",
     "cursor_text": "#343434",
-    "selection": "#555555",
-    "selected_text": "#EAEAEA",
-    "link": "#4FA8AB",
-    "accent": "#4FA8AB",
+    "selection": "#575757",
+    "selected_text": "#F4F4F4",
+    "link": "#F4F4F4",
+    "accent": "#F4F4F4",
 }
 
 light = {
     "ansi": [
-        "#1F1B14", "#944747", "#4F6F4F", "#8A7440",
-        "#0A5C5F", "#6F685B", "#3D3830", "#F4F0EC",
-        "#A29A8C", "#B36A6A", "#6F8F6F", "#A88858",
-        "#2E8487", "#6F685B", "#5A554C", "#FFFFFF",
+        "#111111", "#464646", "#696969", "#575757",
+        "#343434", "#7A7A7A", "#464646", "#E3E3E3",
+        "#696969", "#232323", "#575757", "#464646",
+        "#232323", "#696969", "#343434", "#F4F4F4",
     ],
-    "bg": "#F4F0EC",
-    "fg": "#1F1B14",
-    "bold": "#000000",
-    "cursor": "#1F1B14",
-    "cursor_text": "#F4F0EC",
-    "selection": "#CFC8BC",
-    "selected_text": "#1F1B14",
-    "link": "#0A5C5F",
-    "accent": "#0A5C5F",
+    "bg": "#F4F4F4",
+    "fg": "#232323",
+    "bold": "#111111",
+    "cursor": "#111111",
+    "cursor_text": "#F4F4F4",
+    "selection": "#C0C0C0",
+    "selected_text": "#111111",
+    "link": "#111111",
+    "accent": "#111111",
 }
 
 root = Path(__file__).resolve().parent.parent / "iterm2"

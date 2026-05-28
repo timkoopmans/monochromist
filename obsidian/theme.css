@@ -1,5 +1,5 @@
 /* Monochromist — Obsidian theme
-   Neutral grayscale + single deep teal accent.
+   Strict grayscale ramp, no color. Brightest shade = accent/emphasis.
    Fonts: Atkinson Hyperlegible (text), Inter (UI), JetBrains Mono (code). */
 
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
@@ -36,22 +36,19 @@
   --h6-weight: 600;
 }
 
-/* ===== DARK (warm-neutral) ===== */
+/* ===== DARK ===== */
 .theme-dark {
   --bg0: #343434;
-  --bg1: #3d3d3d;
-  --bg2: #474747;
-  --bg3: #555555;
-  --border: #555555;
-  --fg3: #6e6e6e;
-  --fg2: #909090;
-  --fg1: #c8c8c8;
-  --fg0: #eaeaea;
-  --accent: #4fa8ab;
-  --accent-dim: #2e7679;
-  --red: #b36a6a;
-  --green: #7a9c7a;
-  --yellow: #b8a06a;
+  --bg1: #464646;
+  --bg2: #575757;
+  --bg3: #696969;
+  --border: #575757;
+  --fg3: #7a7a7a;
+  --fg2: #8c8c8c;
+  --fg1: #c0c0c0;
+  --fg0: #e3e3e3;
+  --accent: #f4f4f4;
+  --accent-dim: #c0c0c0;
 
   --background-primary: var(--bg0);
   --background-primary-alt: var(--bg1);
@@ -65,38 +62,38 @@
   --background-modifier-form-field: var(--bg2);
   --background-modifier-form-field-highlighted: var(--bg3);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
-  --background-modifier-success: rgba(122, 156, 122, 0.18);
-  --background-modifier-error: rgba(179, 106, 106, 0.18);
-  --background-modifier-error-hover: rgba(179, 106, 106, 0.28);
+  --background-modifier-success: rgba(244, 244, 244, 0.10);
+  --background-modifier-error:   rgba(244, 244, 244, 0.10);
+  --background-modifier-error-hover: rgba(244, 244, 244, 0.18);
 
   --text-normal: var(--fg0);
   --text-muted: var(--fg1);
   --text-faint: var(--fg2);
   --text-on-accent: var(--bg0);
-  --text-error: var(--red);
-  --text-success: var(--green);
-  --text-warning: var(--yellow);
+  --text-error: var(--accent);
+  --text-success: #afafaf;
+  --text-warning: #d2d2d2;
   --text-accent: var(--accent);
-  --text-accent-hover: #6fbfc2;
-  --text-selection: rgba(79, 168, 171, 0.28);
-  --text-highlight-bg: rgba(184, 160, 106, 0.28);
+  --text-accent-hover: #ffffff;
+  --text-selection: rgba(244, 244, 244, 0.22);
+  --text-highlight-bg: rgba(244, 244, 244, 0.18);
 
   --interactive-normal: var(--bg2);
   --interactive-hover: var(--bg3);
   --interactive-accent: var(--accent);
-  --interactive-accent-hover: #6fbfc2;
+  --interactive-accent-hover: #ffffff;
 
   --caret-color: var(--fg0);
   --code-background: var(--bg1);
   --code-normal: var(--fg0);
   --code-comment: var(--fg2);
-  --code-keyword: var(--fg1);
-  --code-string: var(--fg1);
-  --code-value: var(--fg1);
+  --code-keyword: var(--accent);
+  --code-string: #afafaf;
+  --code-value: var(--accent);
   --code-function: var(--fg0);
-  --code-tag: var(--fg0);
-  --code-property: var(--fg0);
-  --code-punctuation: var(--fg2);
+  --code-tag: var(--accent);
+  --code-property: var(--fg1);
+  --code-punctuation: #9d9d9d;
 
   --titlebar-background: var(--bg0);
   --titlebar-background-focused: var(--bg0);
@@ -108,18 +105,18 @@
 
   --divider-color: var(--border);
   --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: rgba(107, 114, 128, 0.35);
-  --scrollbar-active-thumb-bg: rgba(156, 163, 175, 0.7);
+  --scrollbar-thumb-bg: rgba(122, 122, 122, 0.35);
+  --scrollbar-active-thumb-bg: rgba(192, 192, 192, 0.7);
 
   --tag-background: var(--bg2);
   --tag-color: var(--accent);
 
   --link-color: var(--accent);
-  --link-color-hover: #6fbfc2;
+  --link-color-hover: #ffffff;
   --link-external-color: var(--accent);
-  --link-unresolved-color: var(--red);
+  --link-unresolved-color: #afafaf;
 
-  --blockquote-border-color: var(--accent-dim);
+  --blockquote-border-color: var(--fg3);
   --blockquote-background-color: transparent;
 
   --table-border-color: var(--border);
@@ -127,7 +124,7 @@
   --table-row-alt-background: var(--bg1);
 
   --checkbox-color: var(--accent);
-  --checkbox-color-hover: #6fbfc2;
+  --checkbox-color-hover: #ffffff;
   --checkbox-marker-color: var(--bg0);
   --checkbox-border-color: var(--fg3);
 
@@ -135,22 +132,19 @@
   --modal-border-color: var(--border);
 }
 
-/* ===== LIGHT (warm ivory) ===== */
+/* ===== LIGHT ===== */
 .theme-light {
-  --bg0: #f4f0ec;
-  --bg1: #ebe6df;
-  --bg2: #dfd9d0;
-  --bg3: #cfc8bc;
-  --border: #cfc8bc;
-  --fg3: #a29a8c;
-  --fg2: #6f685b;
-  --fg1: #3d3830;
-  --fg0: #1f1b14;
-  --accent: #0a5c5f;
-  --accent-dim: #2e8487;
-  --red: #944747;
-  --green: #4f6f4f;
-  --yellow: #8a7440;
+  --bg0: #f4f4f4;
+  --bg1: #e3e3e3;
+  --bg2: #d2d2d2;
+  --bg3: #c0c0c0;
+  --border: #c0c0c0;
+  --fg3: #8c8c8c;
+  --fg2: #696969;
+  --fg1: #464646;
+  --fg0: #232323;
+  --accent: #111111;
+  --accent-dim: #464646;
 
   --background-primary: var(--bg0);
   --background-primary-alt: var(--bg1);
@@ -164,37 +158,37 @@
   --background-modifier-form-field: var(--bg1);
   --background-modifier-form-field-highlighted: var(--bg2);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.08);
-  --background-modifier-success: rgba(79, 111, 79, 0.18);
-  --background-modifier-error: rgba(148, 71, 71, 0.18);
-  --background-modifier-error-hover: rgba(148, 71, 71, 0.28);
+  --background-modifier-success: rgba(17, 17, 17, 0.06);
+  --background-modifier-error:   rgba(17, 17, 17, 0.10);
+  --background-modifier-error-hover: rgba(17, 17, 17, 0.16);
 
   --text-normal: var(--fg0);
   --text-muted: var(--fg1);
   --text-faint: var(--fg2);
   --text-on-accent: var(--bg0);
-  --text-error: var(--red);
-  --text-success: var(--green);
-  --text-warning: var(--yellow);
+  --text-error: var(--accent);
+  --text-success: #575757;
+  --text-warning: #343434;
   --text-accent: var(--accent);
-  --text-accent-hover: #2e8487;
-  --text-selection: rgba(10, 92, 95, 0.20);
-  --text-highlight-bg: rgba(138, 116, 64, 0.24);
+  --text-accent-hover: #000000;
+  --text-selection: rgba(17, 17, 17, 0.18);
+  --text-highlight-bg: rgba(17, 17, 17, 0.14);
 
   --interactive-normal: var(--bg1);
   --interactive-hover: var(--bg2);
   --interactive-accent: var(--accent);
-  --interactive-accent-hover: #2e8487;
+  --interactive-accent-hover: #000000;
 
   --caret-color: var(--fg0);
   --code-background: var(--bg1);
   --code-normal: var(--fg0);
-  --code-comment: var(--fg2);
-  --code-keyword: var(--fg1);
-  --code-string: var(--fg1);
-  --code-value: var(--fg1);
+  --code-comment: var(--fg3);
+  --code-keyword: var(--accent);
+  --code-string: var(--fg2);
+  --code-value: var(--accent);
   --code-function: var(--fg0);
-  --code-tag: var(--fg0);
-  --code-property: var(--fg0);
+  --code-tag: var(--accent);
+  --code-property: var(--fg1);
   --code-punctuation: var(--fg2);
 
   --titlebar-background: var(--bg0);
@@ -207,18 +201,18 @@
 
   --divider-color: var(--border);
   --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: rgba(156, 163, 175, 0.40);
-  --scrollbar-active-thumb-bg: rgba(107, 114, 128, 0.8);
+  --scrollbar-thumb-bg: rgba(140, 140, 140, 0.40);
+  --scrollbar-active-thumb-bg: rgba(70, 70, 70, 0.8);
 
   --tag-background: var(--bg2);
   --tag-color: var(--accent);
 
   --link-color: var(--accent);
-  --link-color-hover: #2e8487;
+  --link-color-hover: #000000;
   --link-external-color: var(--accent);
-  --link-unresolved-color: var(--red);
+  --link-unresolved-color: #7a7a7a;
 
-  --blockquote-border-color: var(--accent-dim);
+  --blockquote-border-color: var(--fg3);
   --blockquote-background-color: transparent;
 
   --table-border-color: var(--border);
@@ -226,7 +220,7 @@
   --table-row-alt-background: var(--bg1);
 
   --checkbox-color: var(--accent);
-  --checkbox-color-hover: #2e8487;
+  --checkbox-color-hover: #000000;
   --checkbox-marker-color: var(--bg0);
   --checkbox-border-color: var(--fg3);
 
@@ -260,7 +254,6 @@ pre, code, kbd, samp {
   font-family: var(--font-interface);
 }
 
-/* Tighter, paper-like headings */
 .markdown-preview-view h1,
 .markdown-preview-view h2,
 .markdown-preview-view h3,
@@ -272,7 +265,6 @@ pre, code, kbd, samp {
   letter-spacing: -0.005em;
 }
 
-/* Subtle horizontal rule */
 .markdown-preview-view hr,
 .cm-hr {
   border: none;
@@ -280,7 +272,6 @@ pre, code, kbd, samp {
   margin: 1.5em 0;
 }
 
-/* Block quote */
 .markdown-preview-view blockquote,
 .cm-quote {
   border-left: 2px solid var(--blockquote-border-color);
@@ -289,7 +280,6 @@ pre, code, kbd, samp {
   font-style: italic;
 }
 
-/* Inline code chip */
 .markdown-preview-view :not(pre) > code {
   padding: 0.1em 0.35em;
   border-radius: var(--radius-s);
